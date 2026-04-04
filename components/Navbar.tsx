@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
@@ -12,8 +13,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold tracking-tight text-white hover:text-brand-pink transition-colors">
-              Citadel<span className="text-brand-pink">Glamour</span>
+            <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+              <Image src="/logo.png" alt="CitadelGlamour Logo" width={44} height={44} className="rounded-full border border-brand-pink/40 shadow-[0_0_10px_rgba(219,39,119,0.5)]" />
+              <span className="text-2xl font-bold tracking-tight text-white hidden sm:block">
+                Citadel<span className="text-brand-pink">Glamour</span>
+              </span>
             </Link>
           </div>
           <div className="hidden md:block">
