@@ -5,9 +5,9 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const heroImages = [
-  "/ankara-1.png",
-  "/kampala-1.png",
-  "/ankara_pink.png"
+  "/ankara1.png",
+  "/kampala1.png",
+  "/ankara2.png"
 ];
 
 export default function Hero() {
@@ -33,7 +33,7 @@ export default function Hero() {
             animate={{ opacity: 0.3, scale: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
-            className="absolute inset-0 w-full h-full object-cover object-top"
+            className="absolute inset-0 w-full h-full object-cover object-[50%_35%]"
           />
         </AnimatePresence>
         

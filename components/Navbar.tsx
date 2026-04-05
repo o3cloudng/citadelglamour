@@ -14,7 +14,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-              <Image src="/logo.png" alt="CitadelGlamour Logo" width={44} height={44} className="rounded-full border border-brand-pink/40 shadow-[0_0_10px_rgba(219,39,119,0.5)]" />
+              <Image src="/new_logo_cropped.jpeg" alt="CitadelGlamour Logo" width={44} height={44} className="rounded-full border border-brand-pink/40 shadow-[0_0_10px_rgba(219,39,119,0.5)] object-cover" />
               <span className="text-2xl font-bold tracking-tight text-white hidden sm:block">
                 Citadel<span className="text-brand-pink">Glamour</span>
               </span>
