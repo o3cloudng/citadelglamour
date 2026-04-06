@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   title: "CitadelGlamour | Modern Fashion Design",
   description: "Premium Ankara and Kampala fashion designs for Nigerian designers. Discover modern African aesthetics tailored with perfection.",
   keywords: ["fashion", "Ankara", "Kampala", "Nigerian designers", "CitadelGlamour", "clothing", "African fashion"],
+  icons: {
+    icon: "/new_logo_cropped.jpeg",
+    shortcut: "/new_logo_cropped.jpeg",
+    apple: "/new_logo_cropped.jpeg",
+  },
 };
 
 export default function RootLayout({
