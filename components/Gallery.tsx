@@ -13,7 +13,11 @@ export default function Gallery() {
   useEffect(() => {
     if (selectedIndex !== null) {
       setIsImageLoading(true);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
     }
+    return () => { document.body.style.overflow = ""; };
   }, [selectedIndex]);
 
   // Duplicated items for endless scrolling
@@ -45,6 +49,7 @@ export default function Gallery() {
   };
 
   return (
+    <>
     <section id="gallery" className="py-20 relative overflow-hidden backdrop-blur-sm bg-brand-dark/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 relative z-10">
         <div className="text-center">
@@ -126,6 +131,8 @@ export default function Gallery() {
           </div>
         </div>
       </div>
+
+      </section>
 
       <AnimatePresence>
         {selectedImage && (
@@ -220,6 +227,6 @@ export default function Gallery() {
           </motion.div>
         )}
       </AnimatePresence>
-    </section>
+    </>
   );
 }
